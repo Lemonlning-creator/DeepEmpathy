@@ -1,0 +1,18 @@
+.env
+.env.*
+!.env.example
+__pycache__/
+.venv/
+data/
+.pytest_cache/
+*.egg-info/
+.ruff_cache/
+build/
+dist/
+*.pyc
+
+# Local OS files, QA runs and generated reports
+.DS_Store
+.qa/
+reports/
+*.log

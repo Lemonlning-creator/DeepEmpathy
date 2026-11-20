@@ -1,0 +1,14 @@
+# 仅 prompt_guided 已实现。experimental 为未来预留，不执行数值 DEFE。
+mode: prompt_guided
+experimental:
+  enabled: false
+  horizon: 1
+  empathy_lambda: 0.5
+  uncertainty_alpha: 0.5
+  omega_min: 0.0
+  omega_max: 1.0
+  policy_precision_gamma: 1.0
+  max_simulation_calls: 6
+interaction:
+  max_clarifying_questions_per_turn: 1
+  max_consecutive_clarifying_turns: 2

@@ -1,0 +1,212 @@
+{
+  "date": "2026-11-17",
+  "timezone": "Asia/Shanghai",
+  "mode": "online",
+  "viewport": {
+    "width": 1280,
+    "height": 800
+  },
+  "warmup_excluded": true,
+  "samples": [
+    {
+      "height": 800,
+      "timing": {
+        "completed": true,
+        "first_delta_ms": 2296,
+        "first_dom_ms": 2296,
+        "first_paint_estimate_ms": 2316,
+        "processing": {
+          "elapsed_ms": 2887,
+          "foreground_calls": 1,
+          "http_requests": 1,
+          "memory_retrieval_ms": 866,
+          "path": "fast",
+          "ttft_ms": 2290,
+          "upstream_ttft_ms": 1412
+        },
+        "request_id": "c1c3a243-68f8-4204-903c-2765bcbabc27",
+        "request_sent_ms": 0.7000000476837158,
+        "visible_at_first_text": true
+      },
+      "visibility": "visible",
+      "width": 1280,
+      "memory_status": "mem0",
+      "memory_episodic_hits": 6,
+      "memory_semantic_hits": 2
+    },
+    {
+      "height": 800,
+      "timing": {
+        "completed": true,
+        "first_delta_ms": 1169.3999998569489,
+        "first_dom_ms": 1169.3999998569489,
+        "first_paint_estimate_ms": 1199.7999999523165,
+        "processing": {
+          "elapsed_ms": 1829,
+          "foreground_calls": 1,
+          "http_requests": 1,
+          "memory_retrieval_ms": 1,
+          "path": "fast",
+          "ttft_ms": 1163,
+          "upstream_ttft_ms": 1152
+        },
+        "request_id": "60ec1b6f-fa77-4c30-a0ac-1d825c803138",
+        "request_sent_ms": 0.5999999046325684,
+        "visible_at_first_text": true
+      },
+      "visibility": "visible",
+      "width": 1280,
+      "memory_status": "indexing",
+      "memory_episodic_hits": 0,
+      "memory_semantic_hits": 0
+    },
+    {
+      "height": 800,
+      "timing": {
+        "completed": true,
+        "first_delta_ms": 1437.0999999046326,
+        "first_dom_ms": 1437.2000000476835,
+        "first_paint_estimate_ms": 1467.7000000476835,
+        "processing": {
+          "elapsed_ms": 2128,
+          "foreground_calls": 1,
+          "http_requests": 1,
+          "memory_retrieval_ms": 1,
+          "path": "fast",
+          "ttft_ms": 1431,
+          "upstream_ttft_ms": 1419
+        },
+        "request_id": "13693e03-982a-49a9-afde-2bbcefd21e9c",
+        "request_sent_ms": 1,
+        "visible_at_first_text": true
+      },
+      "visibility": "visible",
+      "width": 1280,
+      "memory_status": "indexing",
+      "memory_episodic_hits": 0,
+      "memory_semantic_hits": 0
+    },
+    {
+      "height": 800,
+      "timing": {
+        "completed": true,
+        "first_delta_ms": 1557.7000000476835,
+        "first_dom_ms": 1557.8000001907349,
+        "first_paint_estimate_ms": 1581.9000000953674,
+        "processing": {
+          "elapsed_ms": 2141,
+          "foreground_calls": 1,
+          "http_requests": 1,
+          "memory_retrieval_ms": 272,
+          "path": "fast",
+          "ttft_ms": 1552,
+          "upstream_ttft_ms": 1270
+        },
+        "request_id": "bba6c26b-6290-4199-b335-7954cd2a4cac",
+        "request_sent_ms": 0.7000000476837158,
+        "visible_at_first_text": true
+      },
+      "visibility": "visible",
+      "width": 1280,
+      "memory_status": "mem0",
+      "memory_episodic_hits": 7,
+      "memory_semantic_hits": 1
+    },
+    {
+      "height": 800,
+      "timing": {
+        "completed": true,
+        "first_delta_ms": 1675.0999999046326,
+        "first_dom_ms": 1675.0999999046326,
+        "first_paint_estimate_ms": 1699.7999999523165,
+        "processing": {
+          "elapsed_ms": 2367,
+          "foreground_calls": 1,
+          "http_requests": 1,
+          "memory_retrieval_ms": 1,
+          "path": "fast",
+          "ttft_ms": 1669,
+          "upstream_ttft_ms": 1658
+        },
+        "request_id": "e2159031-d41c-4f3f-a3c3-4a195599f57f",
+        "request_sent_ms": 0.5999999046325684,
+        "visible_at_first_text": true
+      },
+      "visibility": "visible",
+      "width": 1280,
+      "memory_status": "indexing",
+      "memory_episodic_hits": 0,
+      "memory_semantic_hits": 0
+    },
+    {
+      "height": 800,
+      "timing": {
+        "completed": true,
+        "first_delta_ms": 1524.2999999523165,
+        "first_dom_ms": 1524.2999999523165,
+        "first_paint_estimate_ms": 1550.0999999046326,
+        "processing": {
+          "elapsed_ms": 1839,
+          "foreground_calls": 1,
+          "http_requests": 1,
+          "memory_retrieval_ms": 1,
+          "path": "fast",
+          "ttft_ms": 1517,
+          "upstream_ttft_ms": 1501
+        },
+        "request_id": "08384270-bbfc-4f83-bcf8-65910f084f9a",
+        "request_sent_ms": 0.5,
+        "visible_at_first_text": true
+      },
+      "visibility": "visible",
+      "width": 1280,
+      "memory_status": "indexing",
+      "memory_episodic_hits": 0,
+      "memory_semantic_hits": 0
+    }
+  ],
+  "statistics": {
+    "cloud": {
+      "mean_ms": 1402,
+      "median_ms": 1415.5,
+      "min_ms": 1152,
+      "max_ms": 1658
+    },
+    "server": {
+      "mean_ms": 1603.67,
+      "median_ms": 1534.5,
+      "min_ms": 1163,
+      "max_ms": 2290
+    },
+    "web_dom": {
+      "mean_ms": 1609.97,
+      "median_ms": 1541.05,
+      "min_ms": 1169.4,
+      "max_ms": 2296
+    },
+    "paint_estimate": {
+      "mean_ms": 1635.88,
+      "median_ms": 1566.0,
+      "min_ms": 1199.8,
+      "max_ms": 2316
+    },
+    "frontend_after_sse": {
+      "mean_ms": 0.03,
+      "median_ms": 0.0,
+      "min_ms": 0,
+      "max_ms": 0.1
+    },
+    "paint_after_dom": {
+      "mean_ms": 25.92,
+      "median_ms": 25.25,
+      "min_ms": 20,
+      "max_ms": 30.5
+    },
+    "server_to_dom": {
+      "mean_ms": 6.3,
+      "median_ms": 6.15,
+      "min_ms": 5.8,
+      "max_ms": 7.3
+    }
+  }
+}

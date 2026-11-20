@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#365c4b"><title>深予 · DeepEmpathy</title>
+  <link rel="icon" href="/static/mark.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="/static/style.css"><script src="/static/app.js?v=20261119-weather-context3" defer></script>
+</head>
+<body>
+  <svg class="icon-defs" aria-hidden="true"><defs>
+    <symbol id="i-chat" viewBox="0 0 24 24"><path d="M20 11.5a8 8 0 0 1-8 8H5l-3 2v-7a8 8 0 1 1 18-3Z"/><path d="M7 10h8M7 14h5"/></symbol>
+    <symbol id="i-leaf" viewBox="0 0 24 24"><path d="M20 3C9 2 3 7 5 14c2 7 14 7 15-11Z"/><path d="M3 22C5 15 10 11 15 8"/></symbol>
+    <symbol id="i-book" viewBox="0 0 24 24"><path d="M3 4h7l2 2 2-2h7v16h-7l-2 1-2-1H3Z"/><path d="M12 6v15M6 8h3M6 12h3M15 8h3M15 12h3"/></symbol>
+    <symbol id="i-settings" viewBox="0 0 24 24"><path d="M4 7h16M4 17h16"/><circle cx="9" cy="7" r="3"/><circle cx="15" cy="17" r="3"/></symbol>
+    <symbol id="i-arrow" viewBox="0 0 24 24"><path d="m5 12 7-7 7 7M12 5v15"/></symbol>
+    <symbol id="i-plus" viewBox="0 0 24 24"><path d="M12 5v14M5 12h14"/></symbol>
+    <symbol id="i-check" viewBox="0 0 24 24"><path d="m5 12 4 4L19 6"/></symbol>
+    <symbol id="i-chevron" viewBox="0 0 24 24"><path d="m9 5 7 7-7 7"/></symbol>
+    <symbol id="i-shield" viewBox="0 0 24 24"><path d="m12 3 8 3v6c0 5-8 9-8 9s-8-4-8-9V6Z"/><path d="m8 12 3 3 5-6"/></symbol>
+  </defs></svg>
+  <main class="stage">
+    <aside class="intro">
+      <a class="wordmark" href="/"><img src="/static/mark.svg" alt="" width="29" height="29"> DeepEmpathy <span>LAB</span></a>
+      <div class="intro-copy"><span class="eyebrow">A LITTLE ROOM FOR YOUR INNER WORLD</span>
+        <h1>被听见，<br>也被慢慢理解。</h1>
+        <p>不急着给答案。<br>从你说起的每一件小事，<br>认真靠近你的世界。</p>
+        <div class="intro-line"></div><span class="subtle">深予 · 共情陪伴空间</span>
+      </div>
+      <a href="/bookstore" class="bookstore-link">进入慢屿 3D 书店 ↗</a><div class="desktop-foot"><span class="tiny-dot"></span> 为真实的你，留一点空间。</div>
+    </aside>
+
+    <section class="phone" aria-label="深予模拟小程序">
+      <div class="statusbar"><span id="clock">09:41</span><div class="island"></div><span class="status-icons">▮▮▮ &nbsp;◒ &nbsp;▰</span></div>
+      <header class="app-header"><div class="app-brand"><img src="/static/mark.svg" width="26" height="26" alt=""><strong>深予</strong><span>你的共情陪伴</span></div>
+        <div class="capsule" aria-label="模拟小程序"><span>•••</span><i></i><span>◉</span></div>
+      </header>
+      <div class="page-heading"><div><div class="section-kicker" id="section-kicker">JUST BETWEEN US</div><h2 id="page-title">此刻，想聊点什么？</h2></div><button class="circle-button" id="new-chat" aria-label="开启新对话"><svg><use href="#i-plus"/></svg></button></div>
+      <button id="mode-banner" class="mode-banner"><span class="mode-dot"></span><span id="mode-label">正在连接陪伴空间…</span><svg><use href="#i-chevron"/></svg></button>
+
+      <div class="viewport">
+        <section id="chat-view" class="view active" aria-label="聊天">
+          <div id="message-scroll" class="message-scroll">
+            <button id="load-older" class="text-button hidden">查看更早的对话</button>
+            <div id="welcome" class="welcome">
+              <div class="garden" aria-hidden="true"><div class="orbit orbit-one"></div><div class="orbit orbit-two"></div><span class="garden-dot"></span><svg class="garden-leaf"><use href="#i-leaf"/></svg><span class="spark">✧</span></div>
+              <div class="welcome-tag">慢一点，也没关系</div>
+              <h3>今天的你，过得怎么样？</h3><p>开心的、难以开口的，或是没有头绪的。<br>都可以从这里开始。</p>
+              <div class="invitation"><svg><use href="#i-leaf"/></svg><span>不必组织好语言，你可以慢慢说。</span></div>
+            </div>
+            <div id="messages" aria-live="polite" aria-relevant="additions"></div>
+            <div id="typing" class="typing hidden" role="status"><img src="/static/mark.svg" width="28" height="28" alt=""><div><span></span><span></span><span></span></div><small id="typing-label">正在认真听你说</small></div>
+          </div>
+          <div id="suggestions" class="suggestions"><button type="button" id="deep-mode" class="deep-mode" aria-pressed="false">深入聊聊</button><span id="suggestion-label" class="suggestion-label">从一句小事开始</span><div id="suggestion-list"></div></div>
+          <form id="composer" class="composer"><label class="sr-only" for="message-input">想说的话</label><textarea id="message-input" rows="1" maxlength="4000" placeholder="把此刻的心情，放在这里…"></textarea><button id="send-button" class="send-button" type="submit" aria-label="发送消息"><svg><use href="#i-arrow"/></svg></button></form>
+          <div class="composer-note" id="composer-note">AI 陪伴 · 理解可以被你随时纠正</div>
+        </section>
+
+        <section id="records-view" class="view scroll-view" aria-label="对话记录"><div class="section-description">那些说过的话，都有自己的位置。</div><div id="sessions-list"></div><div id="records-empty" class="empty-state hidden"><svg><use href="#i-book"/></svg><h3>从今天开始记录</h3><p>你的第一段对话会留在这里。</p></div></section>
+
+        <section id="profile-view" class="view scroll-view" aria-label="关于你的理解"><div class="profile-intro"><div class="profile-emblem"><svg><use href="#i-leaf"/></svg></div><h3>关于你，一点点了解</h3><p>你比任何标签都丰富。这里的理解来自对话，<br>你可以确认、纠正，也可以让它离开。</p></div>
+          <div id="profile-demo-note" class="notice hidden">以下为界面示例，不是对你的分析。演示对话不建立真实画像。</div>
+          <div id="profile-memory-note" class="notice hidden">长期记忆已暂停。已有理解仍可查看，但不会用于跨会话对话。</div>
+          <div class="layer-legend"><span>从日常到内心</span><span>以证据为起点 ↗</span></div><div id="profile-list"></div>
+          <p class="fine-print">暂时的情绪不会直接变成稳定人格。<br>较深层的理解，需要更充分、跨情境的对话证据。</p>
+        </section>
+
+        <section id="settings-view" class="view scroll-view" aria-label="空间设置"><div class="settings-hero"><img src="/static/mark.svg" width="52" height="52" alt=""><h3>让陪伴，按你的方式发生</h3><p>你决定说什么，也决定留下什么。</p></div>
+          <div class="settings-group"><div class="group-label">陪伴方式</div><button id="choose-cloud" class="setting-option"><div><strong>云端真实对话</strong><small id="cloud-status">等待服务端配置</small></div><span class="radio" id="cloud-radio"></span></button><button id="choose-demo" class="setting-option"><div><strong>固定脚本演示</strong><small>体验交互，不分析自由输入</small></div><span class="radio" id="demo-radio"></span></button></div>
+          <div class="settings-group"><div class="group-label">你的记忆，你做主</div><div class="setting-option"><div><strong>长期记忆</strong><small>关闭后仅使用当前会话内容</small></div><button id="memory-toggle" class="toggle" role="switch" aria-checked="true" aria-label="长期记忆"><span></span></button></div><p class="setting-help">暂停不会删除已有理解。你仍可在「关于你」中纠正，或删除对话与全部数据。</p></div>
+          <div class="privacy-card"><svg><use href="#i-shield"/></svg><div><strong>给理解留有边界</strong><p>心理解释是待确认的假设。深予提供 AI 陪伴，不替代专业诊疗。真实对话内容会发送至你配置的云端模型服务。</p></div></div>
+          <button id="delete-all" class="danger-link">删除我的全部对话与记忆</button><p class="fine-print">此浏览器的本地身份 · DeepEmpathy 0.1<br>模拟小程序界面 / Prompt-guided</p>
+        </section>
+      </div>
+      <nav class="tabbar" aria-label="主要导航"><button class="tab active" data-view="chat"><svg><use href="#i-chat"/></svg><span>陪伴</span></button><button class="tab" data-view="records"><svg><use href="#i-book"/></svg><span>拾光</span></button><button class="tab" data-view="profile"><svg><use href="#i-leaf"/></svg><span>关于你</span></button><button class="tab" data-view="settings"><svg><use href="#i-settings"/></svg><span>我的空间</span></button></nav>
+      <div class="home-indicator"><span></span></div>
+    </section>
+
+    <aside class="side-note"><span class="note-number">01 / 陪伴的方式</span><h3>每一种感受，<br>都值得被认真对待。</h3><p>倾听当下的情绪，<br>也尊重情绪背后的你。</p><div class="note-flower" aria-hidden="true">✳</div><div class="small-note"><span>YOUR PACE. YOUR SPACE.</span><p>你始终拥有解释自己的权利。</p></div></aside>
+  </main>
+  <div id="toast" class="toast hidden" role="status"></div>
+  <dialog id="modal"><form id="modal-form"><div class="modal-kicker">YOUR SPACE</div><h3 id="modal-title"></h3><p id="modal-description"></p><textarea id="modal-input" maxlength="300" rows="4" class="hidden" aria-label="纠正内容"></textarea><div class="modal-actions"><button type="button" id="modal-cancel" class="secondary-button">再想想</button><button type="submit" id="modal-confirm" class="primary-button">确认</button></div></form></dialog>
+</body></html>

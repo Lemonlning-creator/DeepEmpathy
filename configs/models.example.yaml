@@ -1,0 +1,18 @@
+# 路由说明模板；当前运行时读取 .env，本文件不自动加载。
+providers:
+  primary:
+    base_url: ""  # 或读取 LLM_BASE_URL
+    api_key: ""   # 推荐读取 LLM_API_KEY，不在配置中提交密钥
+    model: ""     # 或读取 LLM_MODEL
+routes:
+  respond: LLM_MODEL_RESPOND # 每轮前台流式回复，默认 1 次
+  prepare: LLM_MODEL_PREPARE # 仅复杂场景，合并分析与策略
+  analysis: LLM_MODEL_ANALYSIS # 合并感知和用户建模
+  # 旧流程组件保留供离线实验，不在实时主流程调用
+  summarization: LLM_MODEL_SUMMARIZATION
+  evaluation: LLM_MODEL_EVALUATION
+embedding:
+  enabled: false
+  base_url: ""
+  api_key: ""
+  model: ""
